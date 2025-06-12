@@ -1,0 +1,43 @@
+
+@font-face {
+    font-family: 'hanwhar_otf';
+
+        src: url('./fonts/04hanwhagothicb_otf-webfont.woff2') format('woff2'),
+        url('./fonts/04hanwhagothicb_otf-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hanwhar_otf';
+
+    src: url('./fonts/06hanwhagothicl_otf-webfont.woff2') format('woff2'),
+        url('./fonts/06hanwhagothicl_otf-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hanwhar_otf';
+
+    src: url('./fonts/06hanwhagothicl_otf-webfont.woff2') format('woff2'),
+        url('./fonts/06hanwhagothicl_otf-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hanwhag';
+    src: url('./fonts/04hanwhagothicb_otf-webfont.woff2') format('woff2'),
+         url('./fonts/04hanwhagothicb_otf-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hanwhag';
+    src: url('./fonts/06hanwhagothicl_otf-webfont.woff2') format('woff2'),
+         url('./fonts/06hanwhagothicl_otf-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
