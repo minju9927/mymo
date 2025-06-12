@@ -883,49 +883,211 @@ header.scroll {
 }
 
 /* content-wrap */
-
 .content-wrap {
-  height: 100vh;
-  /* background-color: salmon; */
+  padding: 140px 0;
 }
 
-.content-wrap .inner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column
+.content-wrap .view-more {
+  padding: 2px 20px 2px 0;
+  font-size: 18px;
+  color: #888;
+  background: url(../img/btn-more04.png) no-repeat right center;
+  background-size: 16px;
 }
 
-.t-wrap {
+.content-wrap .t-wrap {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-}
-
-.t-wrap .view-more {
-  color: #949596;
-  background: url(../img/btn-more05.png) no-repeat right center;
-  padding-right: 20px;
+  align-items: center;
 }
 
 .content-list {
+  margin-top: 40px;
+  width: auto;
+}
+
+.content-list li {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.content-list li:last-child {
+  margin-bottom: 0;
+}
+
+.content-list li>a {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 60px 25px 25px;
+  background: #EDF1FA url('../img/btn-more05.png') no-repeat right 25px center;
+  background-size: 20px;
+  border-radius: 16px;
+  width: 100%;
+}
+
+.content-list .date {
+  color: #888;
+}
+
+.content-wrap .more-link {
+  padding: 2px 20px 2px 0;
+  font-size: 18px;
+  color: #888;
+  background: url('../img/btn-more04.png') no-repeat right center;
+  background-size: 16px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #3b3a42;
+}
+
+footer .dep .inner {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+footer .dep a {
+
+  color: #fff;
+}
+
+.foot-dep1 {
+  padding: 40px 0;
+}
+
+footer address {
+  font-style: normal;
+  margin: 16px 0 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.tel-wrap span {
+  display: inline-block;
+  opacity: .6;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+
+}
+
+.tel-wrap span+span {
+  margin-left: 8px;
+  padding-left: 10px;
+  position: relative;
+}
+
+.tel-wrap span+span:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: calc(50% - 7px);
+  left: 0;
+  width: 1px;
+  height: 14px;
+  background-color: #ffffff35;
+}
+
+.foot-menu {
+  display: flex;
+  gap: 30px;
+}
+
+.foot-menu li a {
+  font-size: 15px;
+  font-weight:100;
+}
+
+.foot-menu li:nth-child(3) a,
+.foot-menu li:nth-child(4) a {
+  color: #ac8eff;
+}
+
+.wa-wrap {
+  text-align: right;
   margin-top: 20px;
 }
 
-.content-list li a {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #EDF1FA;
-  margin-bottom: 10px;
-  border-radius: 10px;
-  padding: 0  30px 0 25px;
-  width: 1150px;
-  height: 74px;
+.foot-dep2 {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 0;
 }
 
-.content-list li a .date {
-  color: #949596;
-  background: url(../img/btn-more05.png) no-repeat right center;
-  padding-right: 30px;
+.copy {
+  opacity: .6;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.quick-menu {
+  display: flex;
+  gap: 16px
+}
+
+.quick-btn {
+  display: block;
+  padding: 0 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 36px;
+  border-radius: 8px;
+
+}
+
+.family-wrap {
+  position: relative;
+}
+
+.family-wrap .quick-btn {
+  padding-right: 74px;
+  position: relative;
+}
+
+.family-wrap .quick-btn::after {
+  display: block;
+  content: "";
+  position: absolute;
+  right: 12px;
+  width: 12px;
+  height: 12px;
+  background: url(../img/ico-family-open.png) no-repeat center;
+  top: calc(50% - 6px);
+  transform: rotate(180deg);
+}
+
+.family-list {
+  position: absolute;
+  bottom: 40px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 8px 0;
+  max-height: 300px;
+  overflow-y: auto;
+  width: 100%;
+  display: none;
+}
+
+.family-wrap.on .family-list {
+  display: block;
+}
+
+.family-list li a {
+  color: #111;
+  display: block;
+  font-size: 13px;
+  padding-left: 8px;
+  color: #111;
+  line-height: 32px;
+  border-radius: 8px;
+}
+
+.family-list li a:hover {
+  background-color: #f7f4ff;
+  color: #784bfc;
+  font-weight: 700;
 }
